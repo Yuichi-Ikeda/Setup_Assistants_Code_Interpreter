@@ -1,10 +1,17 @@
 # Setup Assistants for Code Interpreter (NodeJS)
 
-このプロジェクトでは、OpenAI Assistants Code Interpreter で日本語のグラフを作成するためのアシスタントをセットアップします。日本語フォントを ZIP 形式でアップロードしアシスタントに紐づけます。
+このプロジェクトでは、OpenAI Assistants Code Interpreter で日本語のグラフを作成するためのアシスタントをセットアップします。同時に日本語フォントを ZIP 形式でアップロードしアシスタントに紐づけます。
 
 ## 注意点
 
-本プログラムでは初期化処理として、該当モデルで過去に生成されたアシスタントとデータファイルを`全て削除`した後に新規にセットアップをします。クリーンアップ処理が不要な場合、もしくは残しておきたいアシスタントやデータファイルがある場合は適切な除外処理を組み込んでください。
+本プログラムでは初期化処理として、過去に生成されたアシスタントとデータファイルを`全て削除`した後に新規にセットアップをします。
+
+初回の実行で出力された`ASSISTANT_ID`と`FONT_FILE_ID`を .env ファイルもしくは環境変数に設定する事で、次回以降は再生成せずに既存リソースを維持する動作をします。これにより対象外の残存リソースのクリーンアップのみが可能となります。
+
+```plaintext
+ASSISTANT_ID="asst_acJ1aWX2JWbdvMtXQNLEI1Yl"
+FONT_FILE_ID="assistant-33ayvkVG9jJyoBFy2eKzWs"
+```
 
 ## 検証環境
 
@@ -29,6 +36,8 @@
     AZURE_OPENAI_API_KEY="your-api-key"
     API_VERSION="2024-05-01-preview"
     DEPLOYMENT_NAME="your-deployment-name"
+    ASSISTANT_ID="your-excel-assintat-id"
+    FONT_FILE_ID="your-font-file-id"
     ```
 
 ## 使用方法

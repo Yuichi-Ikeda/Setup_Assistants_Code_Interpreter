@@ -1,8 +1,8 @@
 # Setup Assistants for Code Interpreter (NodeJS) / 永続アシスタントのセットアップ
 
-本プロジェクトでは、OpenAI Assistants Code Interpreter で日本語のグラフを作成するための永続アシスタントをセットアップします。同時に日本語フォントを ZIP 形式でアップロードし永続アシスタントに紐づけます。
+本プロジェクトでは、OpenAI Assistants Code Interpreter で日本語のグラフを作成するための`永続アシスタントをセットアップ`します。同時に日本語フォントを ZIP 形式でアップロードし永続アシスタントに紐づけます。
 
-`永続アシスタントを使用するチャットアプリケーション`は、以下となります。
+永続アシスタントを使用するチャットアプリケーションは、以下となります。
 
 #### [Chat Assistants Code Interpreter (NodeJS) ](https://github.com/Yuichi-Ikeda/Chat_Code_Interpreter_NodeJS_2)
 
